@@ -1,0 +1,32 @@
+.header  { 
+background-color: lightgray; 
+color: blue;
+text-align: center;
+width: 600px; 
+margin:20px;
+}
+.header p{
+	padding: 10px;
+	display: inline-block;
+	vertical-align: top; 	
+}
+.header form input {
+	width: 100px; 
+	height: 30px; 
+	background-color: yellow; 
+	border-radius: 10px;
+	margin: 5px 5px 5px 40px;  
+	color: red;
+	border: 2px solid black;
+
+
+}
+
+h3 {
+	color: red;
+	border: 2px solid black;
+	width: 100px;
+	text-align: center;
+	background-color: yellow;
+	border-radius: 10px;
+}

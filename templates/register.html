@@ -1,0 +1,24 @@
+<html>
+<head><link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles.css')}}">
+	<title>Login</title>
+</head>
+<body> 
+	<h3>Register</h3>
+	{% with messages = get_flashed_messages() %}
+		{% if messages %}
+			{% for message in messages %}
+           	 	<p>{{message}}</p>
+			{% endfor %}
+		{% endif %}
+    {% endwith %}
+	<form action='/process' method='post'>
+		<input type='text' name='first' placeholder='First name'><hr>
+		<input type='text' name='last' placeholder='Last name'><hr>
+		<input type= 'text' name='email' placeholder='Email'><hr>
+		<input type='password' name='password' placeholder= 'Password'><hr>
+		<input type= 'submit' name='submit' placeholder='Register'> <hr></
+	</form>
+
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+first_name= request.form['first']
+		last_name=request.form['last']
+		email=request.form['email']
+		password=request.form['password']
+		pw_hash = bcrypt.generate_password_hash(password)

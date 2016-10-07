@@ -1,0 +1,25 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles.css')}}">
+
+	<title>Comment page</title>
+</head>
+<body>
+	<h3>Please leave a Message</h3>
+
+	<form action='/message' method='post'>
+		<textarea name='text'rows='10' cols='80'> </textarea> 
+		<br>
+		<input type = 'submit' name= 'submit' value='Leave a comment'>
+	</form>
+
+	<h3>Please leave a comment</h3>
+
+	<form action='/comment' method='post'>
+		<textarea name='text'rows='10' cols='80'> </textarea> 
+		<br>
+		<input type = 'submit' name= 'submit' value='Leave a comment'>
+	</form>
+
+</body>
+</html>

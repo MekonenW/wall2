@@ -1,0 +1,23 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles.css')}}">
+
+	<title>The Wall</title>
+</head>
+<body>
+	{% with messages = get_flashed_messages() %}
+      {% if messages %}
+          {% for message in messages %}
+            <p>{{message}}</p>
+          {% endfor %}
+      {% endif %}
+    {% endwith %}
+	<h3>Sign in</h3>
+	<form action='/signin' method='post'>
+		<input type = 'text' name= 'email'> <hr>
+		<input type='password' name='password'><hr>
+		<input type = 'submit' name= 'submit' value='Login'>
+	</form>
+
+</body>
+</html>
